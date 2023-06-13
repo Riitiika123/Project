@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <form style="background-color: rgb(97, 141, 170);">
+        <fieldset>
+            <legend><h1>Personal details</h1></legend>
+            <label for="password"><b>Enter your password:</b></label>
+            <input type="password">
+            <br><br>
+            <label for="name"><b>Enter your name:</b></label>
+            <input type="text" id="name" placeholder="Enter your name" readonly value="Ritika">
+            </br></br>
+            <label for="email"><b>Enter your email</b></label>
+            <input type="email" placeholder="Enter your email">
+            </br></br>
+            <label for="number"><b>Enter your number</b> </label>
+            <input type="number" placeholder="enter number" min="10" max="25">
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><h1>Details<h1></h1></legend>
+        <label for="date"><b>Enter date</b></label>
+        <input type="date" placeholder="enter date" min="1999-12-01" max="2022-12-01" required>
+        <br><br>
+        <label for="datetime-local"><b>Select date and time</b></label>
+        <input type="datetime-local">
+        <br><br>
+        <label for="contact"><b>Contact</b></label>
+        <input type="tel" id="contact" pattern="[4-6]{3}-[5-9]{7}">
+        <textarea rows="10" cols="20" > </textarea>
+        <br><br>
+        <label for="file"><b>Upload a file</b> </label>
+        <input type="file" placeholder="upload a file" multiple>
+        <br><br>
+        <label for="url"><b> url</b></label>
+        <input type="url" placeholder="enter url">
+        <br><br>
+        </fieldset>
+        <input type="image" src="https://pluspng.com/img-png/click-here-png-click-here-600.png" height="50" width="100">
+        <br><br>
+        <p><b>Please select your gender:</b></p>
+        <input type="radio" id="male" name="Gender">
+        <label for="male">male</label>
+        <input type="radio" id="female" name="Gender">
+        <label for="female">female</label>
+        <br><br>
+        <p><b>Select your branch:</b></p>
+        <input type="checkbox" id="CSE" name="CSE" value="CSE">
+        <label for="CSE">computer science</label>
+        <input type="checkbox" id="Mechanical">
+        <label for="ME">mechanical</label>
+        <br><br>
+        <p><b>Select your language:</b></p><br>
+        <select size="2">
+            <option disabled>python</option>
+            <option>C language</option>
+            <option>Java</option>
+            <option>Java script</option>
+        </select>
+        <br><br>
+        <label for="vehicles">vehicles</label>
+        <input list="vehicles">
+            <datalist id="vehicles">
+            <option value="car">
+            <option value="Bike">
+            <option value="Bicycle">
+            <option value="Bus">
+         </datalist>
+        <br><br>
+        <input type="Submit" value="Login">
+        </label>
+
+    </form>
+</body>
+
+</html>
